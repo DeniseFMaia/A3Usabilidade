@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Dev Burguer - A melhor hamburgueria dev!</title>
+</head>
+<body>
+
+   <!--HEADER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img
+            src="./assets/hamb-1.png"
+            alt="Logo DevBurguer"
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+            <h1 class="test-4xl mt-4 mb-2 font-bold text-white">Dev Burguer</h1>
+            <span class="text-white font-medium">Rua dev 10, Centro, Campo Grande - MS</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Dom - 18:00 as 22:00</span>
+            </div>
+        </div>
+    </header>
+   <!--FIM HEADER-->
+
+   <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    Conheça nosso menu
+   </h2>
+   <!--INICIO MENU-->
+   <div id="menu">
+
+        <main class="grid grid-cols-1s md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            
+            
+            <!--PRODUTO ITEM 1-->
+            <div class="flex gap-2">
+                <img
+                    src="./assets/hamb-1.png"
+                    alt="Hamburguer Smach"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Hamburguer Smash</p>
+                    <p class="text-sm">Pão levinho de fermentação natural de trigo, burguer 160g, queijo e maionese da casa.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-1g">R$ 18.90</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Hamburguer Smach"
+                        data-price="18.90"
+                        >
+                        
+                            <i class="fa fa-cart-plus text-1g text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM DO PRODUTO ITEM-->
+
+            <!--PRODUTO ITEM 2-->
+            <div class="flex gap-2">
+                <img
+                    src="./assets/hamb-2.png"
+                    alt="Hamburguer Duplo"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Hamburguer Duplo</p>
+                    <p class="text-sm">Pão levinho de fermentação natural de trigo, burguer 160g, queijo e maionese da casa.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-1g">R$ 32.90</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Hamburguer Duplo"
+                        data-price="32.90"
+                        >
+                        
+                            <i class="fa fa-cart-plus text-1g text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM DO PRODUTO ITEM-->
+
+             <!--PRODUTO ITEM 3-->
+             <div class="flex gap-2">
+                <img
+                    src="./assets/hamb-3.png"
+                    alt="Hamburguer De Costela"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Hamburguer De Costela</p>
+                    <p class="text-sm">Pão levinho de fermentação natural de trigo, burguer 160g, queijo e maionese da casa.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-1g">R$ 48.90</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Hamburguer De Costela"
+                        data-price="48.90"
+                        >
+                        
+                            <i class="fa fa-cart-plus text-1g text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM DO PRODUTO ITEM-->
+
+             <!--PRODUTO ITEM 4-->
+             <div class="flex gap-2">
+                <img
+                    src="./assets/hamb-4.png"
+                    alt="Hamburguer De Frango"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Hamburguer De Frango</p>
+                    <p class="text-sm">Pão levinho de fermentação natural de trigo, burguer 160g, queijo e maionese da casa.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-1g">R$ 42.90</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Hamburguer De frango"
+                        data-price="42.90"
+                        >
+                        
+                            <i class="fa fa-cart-plus text-1g text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM DO PRODUTO ITEM-->
+
+            
+
+        </main>
+
+        <div class="mx-auto max-w-7x1 px-2 my-2">
+            <h2 class="font-bold text-3x1">
+                Bebidas
+            </h2>
+        </div>
+        
+        <!--GRID BEBIDAS-->
+        <div class="grid grid-cols-1s md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+             <!--PRODUTO ITEM 4-->
+             <div class="flex gap-2 w-full">
+                <img
+                    src="./assets/refri-1.png"
+                    alt="Coca Cola lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Coca Cola lata</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-1g">R$ 6.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Cca Cola lata"
+                        data-price="6.00"
+                        >
+                        
+                            <i class="fa fa-cart-plus text-1g text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM DO PRODUTO ITEM-->
+
+        </div>
+        <!--FIM GRID BEBIDAS-->
+
+   </div>
+   <!--FIM DO MENU-->
+</body>
+</html>
