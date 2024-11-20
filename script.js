@@ -1,3 +1,44 @@
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(name) {
+    let cookieArr = document.cookie.split(";");
+    for(let i = 0; i < cookieArr.length; i++) {
+        let cookiePair = cookieArr[i].split("=");
+        if(name == cookiePair[0].trim()) {
+            return decodeURIComponent(cookiePair[1]);
+        }
+    }
+    return null;
+}
+
+const login = document.getElementById("login");
+function verificaUsuarioLogado() {
+    let username = getCookie("USERNAME");
+    // usuario logado
+    if (username) {
+        login.innerHTML = '<span class="text-white font-medium">'+username+' | <a href="javascript:logout();">Sair</a></span>';
+    } else {
+        
+        login.innerHTML = 
+        '<a class="bg-green-600 px-6 rounded mt-6" href="login.html">'+
+        '<i class="fa fa-key text-1g text-white"></i>'+
+        '<span class="text-white font-medium">&nbsp;Login</span>'+
+        '</a>';
+        
+    }
+}
+verificaUsuarioLogado();
+
+function logout() {
+  setCookie("USERNAME", "");
+  verificaUsuarioLogado();
+}
+
 const menu = document.getElementById("menu")
 const cartBtn = document.getElementById("cart-btn")
 const cartModal = document.getElementById("cart-modal")
